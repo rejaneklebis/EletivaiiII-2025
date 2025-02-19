@@ -3,7 +3,7 @@
 @section ('conteudo')
 
 
-<form method="post" action="/listaex1"> 
+<form method="post" action="listaex1"> 
 
 @csrf
 
