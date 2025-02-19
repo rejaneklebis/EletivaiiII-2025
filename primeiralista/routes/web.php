@@ -18,3 +18,13 @@ Route::post('/listaex1', function(Request $request){
     $media = ($nota1 + $nota2 + $nota3) / 3;
     return view('lista.ex1', compact('media'));
 });
+
+Route::get('/ex2', function(){
+    return view('lista.ex2');
+});
+
+Route::post('/listaex2', function(Request $request){
+    $celsius = $request->input('celsius');
+    $fahrenheit = ($celsius * 9/5) + 32;
+    return view('lista.ex2', compact('celsius', 'fahrenheit'));
+});
