@@ -13,7 +13,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/ex1">Soma dos valores</a></li>
-            <li><a class="dropdown-item" href="/ex2">dois</a></li>
+            <li><a class="dropdown-item" href="/ex2">Valores A e B</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
             
           </ul>

@@ -10,3 +10,6 @@ Route::get('/', function () {
 
 Route::get('/ex1', [ExerciciosController::class, 'abrirFormExer1']);
 Route::post('/listaex1', [ExerciciosController::class, 'respostaExer1']);
+
+Route::get('/ex2', [ExerciciosController::class, 'abrirFormExer2']);
+Route::post('/listaex2', [ExerciciosController::class, 'respostaExer2']);

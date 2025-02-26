@@ -23,4 +23,23 @@ class ExerciciosController extends Controller
         
         return view('lista.ex1', compact('retorno'));
     }
+
+    public function abrirFormExer2(){
+        return view('lista.ex2');
+    }
+   
+    public function respostaExer2(Request $request){
+        $valor1 = floatval($request->input('valor1'));
+        $valor2 = floatval($request->input('valor2'));
+        if ($valor1 === $valor2) {
+            $resultado = "Números iguais: $valor1";
+        } else {
+            $valores = [$valor1, $valor2];
+            sort($valores);
+            $resultado = "Valores em ordem crescente: ".implode(' ', $valores);
+        }
+   
+        return view('lista.ex2', compact('resultado'));
+    }
+
 }
