@@ -42,4 +42,23 @@ class ExerciciosController extends Controller
         return view('lista.ex2', compact('resultado'));
     }
 
+    public function abrirFormExer3(){
+        return view('lista.ex3');
+    }
+
+    public function respostaExer3(Request $request){
+        $valorProduto = floatval($request->input('valorProduto'));
+
+        if ($valorProduto > 100) {
+            $desconto = $valorProduto * 0.15;
+            $valorComDesconto = $valorProduto - $desconto;
+            $resultado = "O valor original era R$" . number_format($valorProduto, 2, ',', '.') . 
+                         " e com 15% de desconto fica R$" . number_format($valorComDesconto, 2, ',', '.');
+        } else {
+            $resultado = "O valor do produto é R$" . number_format($valorProduto, 2, ',', '.') . " (sem desconto)";
+        }
+
+        return view('lista.ex3')->with('retorno', true)->with('resultado', $resultado);
+    }
+
 }
