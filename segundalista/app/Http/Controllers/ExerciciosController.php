@@ -131,6 +131,42 @@ class ExerciciosController extends Controller
             default: return "Mês inválido";
         }
     }
+
+    public function abrirFormExer6(){
+        return view('lista.ex6');
+    }
+
+    public function respostaExer6(Request $request){
+        $numero = $request->input('valor1');
+
+        $numeros = [];
+        for ($i = 1; $i <= $numero; $i++) {
+            $numeros[] = $i;
+        }
+
+        $resultado = "Números de 1 até {$numero}: " . implode(', ', $numeros);
+
+        return view('lista.ex6')->with('retorno', true)->with('resultado', $resultado);
+    }
+    
+    public function abrirFormExer7(){
+        return view('lista.ex7');
+    }
+
+    public function respostaExer7(Request $request){
+        $numero = $request->input('valor1');
+        $soma = 0;
+        $contador = 1;
+
+        while ($contador <= $numero) {
+            $soma += $contador;
+            $contador++;
+        }
+
+        $resultado = "A soma de todos os números de 1 até {$numero} é {$soma}.";
+
+        return view('lista.ex7')->with('retorno', true)->with('resultado', $resultado);
+    }
     
 
 }

@@ -17,8 +17,8 @@
             <li><a class="dropdown-item" href="/ex3">Desconto > R$ 100,00</a></li>
             <li><a class="dropdown-item" href="/ex4">Valores primos</a></li>
             <li><a class="dropdown-item" href="/ex5">Mês correspondente</a></li>
-            <li><a class="dropdown-item" href="#">três</a></li>
-            <li><a class="dropdown-item" href="#">três</a></li>
+            <li><a class="dropdown-item" href="/ex6">Imprimir números</a></li>
+            <li><a class="dropdown-item" href="/ex7">Somar números</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
