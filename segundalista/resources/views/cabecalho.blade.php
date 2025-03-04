@@ -15,6 +15,10 @@
             <li><a class="dropdown-item" href="/ex1">Soma dos valores</a></li>
             <li><a class="dropdown-item" href="/ex2">Valores A e B</a></li>
             <li><a class="dropdown-item" href="/ex3">Desconto > R$ 100,00</a></li>
+            <li><a class="dropdown-item" href="/ex4">Valores primos</a></li>
+            <li><a class="dropdown-item" href="/ex5">Mês correspondente</a></li>
+            <li><a class="dropdown-item" href="#">três</a></li>
+            <li><a class="dropdown-item" href="#">três</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>
             <li><a class="dropdown-item" href="#">três</a></li>

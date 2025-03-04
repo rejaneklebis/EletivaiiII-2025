@@ -61,4 +61,76 @@ class ExerciciosController extends Controller
         return view('lista.ex3')->with('retorno', true)->with('resultado', $resultado);
     }
 
+    public function abrirFormExer4(){
+        return view('lista.ex4');
+    }
+
+    public function respostaExer4(Request $request){
+        $valor1 = floatval($request->input('valor1'));
+        $primos = $this->encontrarPrimos($valor1);
+
+        $resultado = "Números primos até {$valor1}: " . implode(', ', $primos);
+
+        return view('lista.ex4')->with('retorno', true)->with('resultado', $resultado);
+    }
+
+    private function encontrarPrimos($limite)
+    {
+        $primos = [];
+
+        for ($num = 2; $num <= $limite; $num++) {
+            if ($this->ehPrimo($num)) {
+                $primos[] = $num;
+            }
+        }
+
+        return $primos;
+    }
+
+    private function ehPrimo($numero)
+    {
+        if ($numero < 2) return false;
+
+        for ($i = 2; $i <= sqrt($numero); $i++) {
+            if ($numero % $i == 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+    
+    public function abrirFormExer5(){
+        return view('lista.ex5');
+    }
+
+    public function respostaExer5(Request $request){
+        $numeroMes = $request->input('valor1');
+        $nomeMes = $this->obterNomeMes($numeroMes);
+
+        $resultado = "O mês correspondente ao número {$numeroMes} é {$nomeMes}.";
+
+        return view('lista.ex5')->with('retorno', true)->with('resultado', $resultado);
+    }
+
+    private function obterNomeMes($numeroMes)
+    {
+        switch ($numeroMes) {
+            case 1: return "Janeiro";
+            case 2: return "Fevereiro";
+            case 3: return "Março";
+            case 4: return "Abril";
+            case 5: return "Maio";
+            case 6: return "Junho";
+            case 7: return "Julho";
+            case 8: return "Agosto";
+            case 9: return "Setembro";
+            case 10: return "Outubro";
+            case 11: return "Novembro";
+            case 12: return "Dezembro";
+            default: return "Mês inválido";
+        }
+    }
+    
+
 }
