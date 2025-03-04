@@ -19,9 +19,9 @@
             <li><a class="dropdown-item" href="/ex5">Mês correspondente</a></li>
             <li><a class="dropdown-item" href="/ex6">Imprimir números</a></li>
             <li><a class="dropdown-item" href="/ex7">Somar números</a></li>
-            <li><a class="dropdown-item" href="#">três</a></li>
-            <li><a class="dropdown-item" href="#">três</a></li>
-            <li><a class="dropdown-item" href="#">três</a></li>
+            <li><a class="dropdown-item" href="/ex8">Contagem regressiva</a></li>
+            <li><a class="dropdown-item" href="/ex9">Calcular o fatorial</a></li>
+            <li><a class="dropdown-item" href="/ex10">Tabuada</a></li>
             
           </ul>
         </li>

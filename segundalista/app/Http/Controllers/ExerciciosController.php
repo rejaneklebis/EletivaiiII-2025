@@ -168,5 +168,57 @@ class ExerciciosController extends Controller
         return view('lista.ex7')->with('retorno', true)->with('resultado', $resultado);
     }
     
+    public function abrirFormExer8(){
+        return view('lista.ex8');
+    }
+
+    public function respostaExer8(Request $request){
+        $numero = $request->input('valor1');
+        $contagem = [];
+
+        do {
+            $contagem[] = $numero;
+            $numero--;
+        } while ($numero >= 1);
+
+        $resultado = "Contagem regressiva: " . implode(', ', $contagem);
+
+        return view('lista.ex8')->with('retorno', true)->with('resultado', $resultado);
+    }
+
+    public function abrirFormExer9(){
+        return view('lista.ex9');
+    }
+
+    public function respostaExer9(Request $request){
+        $numero = $request->input('valor1');
+        $fatorial = 1;
+
+        for ($i = $numero; $i > 1; $i--) {
+            $fatorial *= $i;
+        }
+
+        $resultado = "O fatorial de {$numero} é {$fatorial}.";
+
+        return view('lista.ex9')->with('retorno', true)->with('resultado', $resultado);
+    }
+    
+    public function abrirFormExer10(){
+        return view('lista.ex10');
+    }
+
+    public function respostaExer10(Request $request){
+        $numero = $request->input('valor1');
+        $tabuada = [];
+
+        for ($i = 1; $i <= 10; $i++) {
+            $tabuada[] = "{$numero} x {$i} = " . ($numero * $i);
+        }
+
+        $resultado = implode(' / ', $tabuada);
+
+        return view('lista.ex10')->with('retorno', true)->with('resultado', $resultado);
+    }
+    
 
 }

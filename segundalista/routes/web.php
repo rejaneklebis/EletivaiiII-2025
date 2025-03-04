@@ -28,3 +28,12 @@ Route::post('/listaex6', [ExerciciosController::class, 'respostaExer6']);
 
 Route::get('/ex7', [ExerciciosController::class, 'abrirFormExer7']);
 Route::post('/listaex7', [ExerciciosController::class, 'respostaExer7']);
+
+Route::get('/ex8', [ExerciciosController::class, 'abrirFormExer8']);
+Route::post('/listaex8', [ExerciciosController::class, 'respostaExer8']);
+
+Route::get('/ex9', [ExerciciosController::class, 'abrirFormExer9']);
+Route::post('/listaex9', [ExerciciosController::class, 'respostaExer9']);
+
+Route::get('/ex10', [ExerciciosController::class, 'abrirFormExer10']);
+Route::post('/listaex10', [ExerciciosController::class, 'respostaExer10']);
