@@ -23,6 +23,8 @@
             <li><a class="dropdown-item" href="/ex9">Metros para centímetros</a></li>
             <li><a class="dropdown-item" href="/ex10">Quilômetros em milhas</a></li>
             <li><a class="dropdown-item" href="/ex11">IMC</a></li>
+            <li><a class="dropdown-item" href="/ex12">Desconto</a></li>
+            <li><a class="dropdown-item" href="/ex13">Juros simples</a></li>
             
           </ul>
         </li>

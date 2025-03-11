@@ -144,3 +144,32 @@ Route::post('/listaex11', function(Request $request){
     return view('lista.ex11', compact('imc')); 
 });
 
+Route::get('/ex12', function(){ 
+    return view('lista.ex12');
+});
+
+Route::post('/listaex12', function(Request $request){ 
+
+    $preco = floatval($request -> input('preco'));
+    $desconto = floatval($request -> input('desconto'));
+    $preco_com_desconto = $preco * (1 - $desconto / 100);
+
+    
+
+    return view('lista.ex12', compact('preco_com_desconto')); 
+});
+
+Route::get('/ex13', function(){ 
+    return view('lista.ex13');
+});
+
+Route::post('/listaex13', function(Request $request){ 
+
+    $capital = floatval($request -> input('capital'));
+    $taxa = floatval($request -> input('taxa'));
+    $periodo = floatval($request -> input('periodo'));
+    $juros_simples = $capital * ($taxa / 100) * $periodo;
+
+
+    return view('lista.ex13', compact('juros_simples')); 
+});
