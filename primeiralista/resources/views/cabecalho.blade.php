@@ -14,7 +14,9 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="/ex1">Média de Notas</a></li>
             <li><a class="dropdown-item" href="/ex2">Celsius em Fahrenheit</a></li>
-            <li><a class="dropdown-item" href="#">Fahrenheit em Celsius</a></li>
+            <li><a class="dropdown-item" href="/ex3">Fahrenheit em Celsius</a></li>
+            <li><a class="dropdown-item" href="/ex4">Área do triângulo</a></li>
+            <li><a class="dropdown-item" href="/ex5">Área do círculo</a></li>
             
           </ul>
         </li>
