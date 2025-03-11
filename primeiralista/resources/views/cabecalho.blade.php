@@ -25,6 +25,8 @@
             <li><a class="dropdown-item" href="/ex11">IMC</a></li>
             <li><a class="dropdown-item" href="/ex12">Desconto</a></li>
             <li><a class="dropdown-item" href="/ex13">Juros simples</a></li>
+            <li><a class="dropdown-item" href="/ex14">Juros composto</a></li>
+            <li><a class="dropdown-item" href="/ex15">Dias em hr/min/seg</a></li>
             
           </ul>
         </li>

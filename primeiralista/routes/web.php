@@ -173,3 +173,33 @@ Route::post('/listaex13', function(Request $request){
 
     return view('lista.ex13', compact('juros_simples')); 
 });
+
+Route::get('/ex14', function(){ 
+    return view('lista.ex14');
+});
+
+Route::post('/listaex14', function(Request $request){ 
+
+    $capital = floatval($request -> input('capital'));
+    $taxa = floatval($request -> input('taxa'));
+    $periodo = floatval($request -> input('periodo'));
+    $montante = $capital + ($capital * ($taxa / 100) * $periodo);
+
+    return view('lista.ex14', compact('montante')); 
+});
+
+Route::get('/ex15', function(){ 
+    return view('lista.ex15');
+});
+
+Route::post('/listaex15', function(Request $request){ 
+
+    $dias = floatval($request -> input('dias'));
+    $horas = $dias * 24;
+    $minutos = $dias * 24 * 60;
+    $segundos = $dias * 24 * 60 * 60;
+    $resultado = "{$horas} horas, {$minutos} minutos, {$segundos} segundos";
+
+    return view('lista.ex15', compact('resultado')); 
+});
+
