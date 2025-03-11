@@ -17,6 +17,9 @@
             <li><a class="dropdown-item" href="/ex3">Fahrenheit em Celsius</a></li>
             <li><a class="dropdown-item" href="/ex4">Área do triângulo</a></li>
             <li><a class="dropdown-item" href="/ex5">Área do círculo</a></li>
+            <li><a class="dropdown-item" href="/ex6">Perímetro do retângulo</a></li>
+            <li><a class="dropdown-item" href="/ex7">Perímetro do círculo</a></li>
+            <li><a class="dropdown-item" href="/ex8">Base elevada ao expoente</a></li>
             
           </ul>
         </li>

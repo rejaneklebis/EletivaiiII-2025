@@ -65,3 +65,42 @@ Route::post('/listaex5', function(Request $request){
 
     return view('lista.ex5', compact('area'));
 });
+
+Route::get('/ex6', function(){ 
+    return view('lista.ex6');
+});
+
+Route::post('/listaex6', function(Request $request){ 
+
+    $largura = floatval($request -> input('largura'));
+    $altura = floatval($request -> input('altura'));
+    $perimetro = 2 * ($altura + $largura);
+
+    return view('lista.ex6', compact('perimetro')); 
+});
+
+
+Route::get('/ex7', function(){ 
+    return view('lista.ex7');
+});
+
+Route::post('/listaex7', function(Request $request){ 
+    $raio = floatval($request -> input('raio'));
+    $perimetro = 2 * pi() * $raio;
+
+    return view('lista.ex7', compact('perimetro')); 
+});
+
+Route::get('/ex8', function(){ 
+    return view('lista.ex8');
+});
+
+Route::post('/listaex8', function(Request $request){ 
+
+    $base = floatval($request -> input('base'));
+    $expoente = floatval($request -> input('expoente'));
+    $resultado = pow($base, $expoente);
+
+    return view('lista.ex8', compact('resultado')); 
+});
+
