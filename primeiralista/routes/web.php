@@ -104,3 +104,43 @@ Route::post('/listaex8', function(Request $request){
     return view('lista.ex8', compact('resultado')); 
 });
 
+Route::get('/ex9', function(){ 
+    return view('lista.ex9');
+});
+
+Route::post('/listaex9', function(Request $request){ 
+
+    $metros = floatval($request -> input('metros'));
+    $centimetros = $metros * 100;
+    
+
+    return view('lista.ex9', compact('centimetros')); 
+});
+
+Route::get('/ex10', function(){ 
+    return view('lista.ex10');
+});
+
+Route::post('/listaex10', function(Request $request){ 
+
+    $quilometros = floatval($request -> input('quilometros'));
+    $milhas = $quilometros * 0.621371;
+
+    return view('lista.ex10', compact('milhas')); 
+});
+
+
+Route::get('/ex11', function(){ 
+    return view('lista.ex11');
+});
+
+Route::post('/listaex11', function(Request $request){ 
+
+    $peso = floatval($request -> input('peso'));
+    $altura = floatval($request -> input('altura'));
+    $imc = $peso / ($altura * $altura);
+    
+
+    return view('lista.ex11', compact('imc')); 
+});
+

@@ -20,6 +20,9 @@
             <li><a class="dropdown-item" href="/ex6">Perímetro do retângulo</a></li>
             <li><a class="dropdown-item" href="/ex7">Perímetro do círculo</a></li>
             <li><a class="dropdown-item" href="/ex8">Base elevada ao expoente</a></li>
+            <li><a class="dropdown-item" href="/ex9">Metros para centímetros</a></li>
+            <li><a class="dropdown-item" href="/ex10">Quilômetros em milhas</a></li>
+            <li><a class="dropdown-item" href="/ex11">IMC</a></li>
             
           </ul>
         </li>
